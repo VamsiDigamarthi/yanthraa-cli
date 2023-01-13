@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { BiEdit } from "react-icons/bi";
 import { Modal, useMantineTheme } from "@mantine/core";
 import { RiDeleteBin5Fill } from "react-icons/ri";
@@ -44,6 +44,8 @@ const Dash = () => {
   //   console.log(e);
   // };
 
+  console.log(alertDelete)
+
   useEffect(() => {
     async function fetchData() {
       const local = localStorage.getItem("user");
@@ -79,10 +81,10 @@ const Dash = () => {
     toast(data);
   };
 
-  const userListFaild = (d) => {
-    console.log(`ddfff ${d}`);
-    toast(d);
-  };
+  // const userListFaild = (d) => {
+  //   console.log(`ddfff ${d}`);
+  //   toast(d);
+  // };
 
   useEffect(() => {
     async function fetchDelete() {
@@ -198,10 +200,10 @@ const Dash = () => {
     console.log("form button click");
   };
 
-  const notify = () => {
-    //toast("hi");
-    console.log("ji");
-  };
+  // const notify = () => {
+  //   //toast("hi");
+  //   console.log("ji");
+  // };
 
   // if (setAlertDelete) {
   //   toast("hi");
